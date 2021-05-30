@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}type\PYGZus{}traits\PYGZgt{}}
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{p}{,} \PYG{k}{typename} \PYG{n+nc}{U}\PYG{p}{,} \PYG{k}{typename} \PYG{n+nc}{TU} \PYG{o}{=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{common\PYGZus{}type\PYGZus{}t}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{p}{,}\PYG{n}{U}\PYG{o}{\PYGZgt{}\PYGZgt{}}
+\PYG{n}{TU} \PYG{n}{get\PYGZus{}lower}\PYG{p}{(}\PYG{n}{T} \PYG{n}{a}\PYG{p}{,} \PYG{n}{U} \PYG{n}{b}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{a} \PYG{o}{\PYGZlt{}} \PYG{n}{b} \PYG{o}{?} \PYG{n+nl}{a}\PYG{p}{:} \PYG{n}{b}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k}{auto} \PYG{n}{result1} \PYG{o}{=} \PYG{n}{get\PYGZus{}lower}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mf}{4.99}\PYG{p}{);}
+\PYG{k}{auto} \PYG{n}{result2} \PYG{o}{=} \PYG{n}{get\PYGZus{}lower}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,} \PYG{k+kt}{unsigned} \PYG{k+kt}{int}\PYG{p}{,} \PYG{k+kt}{short}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{12u}\PYG{p}{);}
+\end{Verbatim}

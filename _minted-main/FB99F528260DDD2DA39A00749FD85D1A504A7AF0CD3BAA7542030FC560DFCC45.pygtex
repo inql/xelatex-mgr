@@ -1,0 +1,36 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cm}{/* argumentem może być zarówno typ bądź inna klasa, bądź inny szablon}
+\PYG{c+cm}{*  parametrowi szablonu można przypisać argumenty domyślne}
+\PYG{c+cm}{*/}
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{p}{,} \PYG{k+kt}{size\PYGZus{}t} \PYG{n}{N} \PYG{o}{=} \PYG{l+m+mi}{10}\PYG{o}{\PYGZgt{}}
+\PYG{k}{class} \PYG{n+nc}{MyClass}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{T}\PYG{o}{*} \PYG{n}{items\PYGZus{}}\PYG{p}{;}
+
+\PYG{k}{public}\PYG{o}{:}
+    \PYG{k}{explicit} \PYG{n}{MyClass}\PYG{p}{();}
+    \PYG{o}{\PYGZti{}}\PYG{n}{MyClass}\PYG{p}{()} \PYG{p}{\PYGZob{}} \PYG{k}{delete} \PYG{p}{[]} \PYG{n}{items\PYGZus{}}\PYG{p}{;} \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{const} \PYG{n}{T}\PYG{o}{\PYGZam{}} \PYG{k}{operator}\PYG{p}{[](}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{index}\PYG{p}{)} \PYG{k}{const}
+    \PYG{p}{\PYGZob{}}
+         \PYG{k}{return} \PYG{n}{items\PYGZus{}}\PYG{p}{[}\PYG{n}{index}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{n}{T}\PYG{o}{\PYGZam{}} \PYG{k}{operator}\PYG{p}{[](}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{index}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+         \PYG{k}{return} \PYG{n}{items\PYGZus{}}\PYG{p}{[}\PYG{n}{index}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{const} \PYG{n}{T}\PYG{o}{\PYGZam{}} \PYG{n}{at}\PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{index}\PYG{p}{)} \PYG{k}{const}\PYG{p}{;}
+    \PYG{n}{T}\PYG{o}{\PYGZam{}} \PYG{n+nf}{at}\PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{index}\PYG{p}{);}
+
+    \PYG{k+kt}{size\PYGZus{}t} \PYG{n+nf}{size}\PYG{p}{()} \PYG{k}{const}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n}{N}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{c+c1}{// składowe klasy również mogą być szablonami}
+    \PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T2}\PYG{o}{\PYGZgt{}}
+    \PYG{n}{MyClass}\PYG{o}{\PYGZlt{}}\PYG{n}{T2}\PYG{o}{\PYGZgt{}\PYGZam{}} \PYG{k}{operator}\PYG{o}{=}\PYG{p}{(}\PYG{k}{const} \PYG{n}{MyClass}\PYG{o}{\PYGZlt{}}\PYG{n}{T2}\PYG{o}{\PYGZgt{}\PYGZam{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{};}
+\end{Verbatim}

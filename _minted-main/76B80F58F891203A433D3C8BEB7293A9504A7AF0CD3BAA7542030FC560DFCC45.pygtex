@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{double} \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mf}{2.22}\PYG{p}{;}
+\PYG{k+kt}{double} \PYG{n}{y} \PYG{o}{=} \PYG{l+m+mf}{3.33}\PYG{p}{;}
+\PYG{k}{auto} \PYG{n}{result} \PYG{o}{=} \PYG{n}{is\PYGZus{}lower}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{);}
+\PYG{k}{auto} \PYG{n}{resultInt} \PYG{o}{=} \PYG{n}{is\PYGZus{}lower}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{k}{auto} \PYG{n}{resultFail} \PYG{o}{=} \PYG{n}{is\PYGZus{}lower}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{12u}\PYG{p}{);} \PYG{c+c1}{// ERROR!}
+\end{Verbatim}
