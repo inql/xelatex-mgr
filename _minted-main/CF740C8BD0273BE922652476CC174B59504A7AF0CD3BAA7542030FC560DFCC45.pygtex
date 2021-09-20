@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{template}
+\PYG{o}{\PYGZlt{}}
+   \PYG{k}{typename} \PYG{n+nc}{T}\PYG{p}{,}
+   \PYG{k}{typename} \PYG{n+nc}{AccumulationPolicy} \PYG{o}{=} \PYG{n}{Sum}\PYG{p}{,}
+   \PYG{k}{typename} \PYG{n+nc}{Traits} \PYG{o}{=} \PYG{n}{AccumulationTraits}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}
+\PYG{o}{\PYGZgt{}}
+\PYG{k}{typename} \PYG{n+nc}{Traits}\PYG{o}{::}\PYG{n}{AccumulatorType} \PYG{n}{accumulate} \PYG{p}{(}\PYG{k}{const} \PYG{n}{T}\PYG{o}{*} \PYG{n}{begin}\PYG{p}{,} \PYG{k}{const} \PYG{n}{T}\PYG{o}{*} \PYG{n}{end}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{using} \PYG{n}{AccT} \PYG{o}{=} \PYG{k}{typename} \PYG{n+nc}{Traits}\PYG{o}{::}\PYG{n}{AccumulatorType}\PYG{p}{;}
+
+    \PYG{n}{AccT} \PYG{n}{total} \PYG{o}{=} \PYG{n}{Traits}\PYG{o}{::}\PYG{n}{zero}\PYG{p}{;}
+
+    \PYG{k}{while} \PYG{p}{(}\PYG{n}{begin} \PYG{o}{!=} \PYG{n}{end}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n}{AccumulationPolicy}\PYG{o}{::}\PYG{n}{accumulate}\PYG{p}{(}\PYG{n}{total}\PYG{p}{,} \PYG{o}{*}\PYG{n}{begin}\PYG{p}{);}
+        \PYG{o}{++}\PYG{n}{begin}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{return} \PYG{n}{total}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

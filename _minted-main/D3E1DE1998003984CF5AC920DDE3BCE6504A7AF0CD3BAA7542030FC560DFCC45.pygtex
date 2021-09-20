@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Matrix} \PYG{n}{multiply\PYGZus{}strasen\PYGZus{}inner}\PYG{p}{(}\PYG{n}{Matrix}\PYG{o}{\PYGZam{}} \PYG{n}{a}\PYG{p}{,} \PYG{n}{Matrix}\PYG{o}{\PYGZam{}} \PYG{n}{b}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{get}\PYG{o}{\PYGZlt{}}\PYG{n}{index}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{var}\PYG{p}{)}
+\end{Verbatim}

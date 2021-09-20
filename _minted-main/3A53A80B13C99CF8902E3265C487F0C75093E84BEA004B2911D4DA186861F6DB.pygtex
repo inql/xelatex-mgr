@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} W głównym folderze projektu:}
+cmake \PYGZhy{}Hstandalone \PYGZhy{}Bbuild/standalone
+cmake \PYGZhy{}\PYGZhy{}build build/standalone
+./build/standalone/GenAlg
+\end{Verbatim}

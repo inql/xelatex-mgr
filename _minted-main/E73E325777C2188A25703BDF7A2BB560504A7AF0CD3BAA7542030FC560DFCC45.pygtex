@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{std}\PYG{o}{::}\PYG{n}{stringstream} \PYG{n}{inorderTraverse}\PYG{p}{(}\PYG{n}{node} \PYG{o}{*}\PYG{n}{leaf}\PYG{p}{,} \PYG{n}{std}\PYG{o}{::}\PYG{n}{function}\PYG{o}{\PYGZlt{}\PYGZgt{}} \PYG{n}{func}\PYG{p}{)}
+\end{Verbatim}

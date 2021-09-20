@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{// przykładowe wywołanie}
-\PYG{n}{MyClass}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{container\PYGZus{}1}\PYG{p}{;} \PYG{c+c1}{//domyślny size = 10}
-\PYG{n}{MyClass}\PYG{o}{\PYGZlt{}}\PYG{n}{std}\PYG{o}{::}\PYG{n}{string}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{o}{\PYGZgt{}} \PYG{c+c1}{//size = 100}
-\end{Verbatim}

@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{template}\PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{o}{\PYGZgt{}} \PYG{k}{struct} \PYG{n+nc}{AccumulationTraits}\PYG{p}{;}
+
+\PYG{k}{template}\PYG{o}{\PYGZlt{}\PYGZgt{}}
+\PYG{k}{struct} \PYG{n+nc}{AccumulationTraits}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{uint8\PYGZus{}t}\PYG{o}{\PYGZgt{}}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{using} \PYG{n}{AccumulatorType} \PYG{o}{=} \PYG{k+kt}{int}\PYG{p}{;}
+    \PYG{k}{static} \PYG{k}{constexpr} \PYG{n}{AccumulatorType} \PYG{n}{zero} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+
+\PYG{k}{template}\PYG{o}{\PYGZlt{}\PYGZgt{}}
+\PYG{k}{struct} \PYG{n+nc}{AccumulationTraits}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{float}\PYG{o}{\PYGZgt{}}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{using} \PYG{n}{AccumulatorType} \PYG{o}{=} \PYG{k+kt}{float}\PYG{p}{;}
+    \PYG{k}{static} \PYG{k}{constexpr} \PYG{k+kt}{float} \PYG{n}{zero} \PYG{o}{=} \PYG{l+m+mf}{0.0f}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+\end{Verbatim}

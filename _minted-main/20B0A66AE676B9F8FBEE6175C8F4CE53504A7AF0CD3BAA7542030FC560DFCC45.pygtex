@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Polynomial} \PYG{o}{\PYGZam{}}\PYG{n}{Polynomial}\PYG{o}{::}\PYG{k}{operator}\PYG{o}{+=}\PYG{p}{(}\PYG{k}{const} \PYG{n}{Polynomial} \PYG{o}{\PYGZam{}}\PYG{n}{other}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{n}{data}\PYG{p}{.}\PYG{n}{resize}\PYG{p}{(}\PYG{n}{std}\PYG{o}{::}\PYG{n}{max}\PYG{p}{(}\PYG{n}{other}\PYG{p}{.}\PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(),} \PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{()),} \PYG{l+m+mi}{0}\PYG{p}{);}
+  \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{!=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{min}\PYG{p}{(}\PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(),} \PYG{n}{other}\PYG{p}{.}\PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{());} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{data}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{other}\PYG{p}{.}\PYG{n}{data}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{n}{normalize}\PYG{p}{(}\PYG{n}{data}\PYG{p}{);}
+  \PYG{k}{return} \PYG{o}{*}\PYG{k}{this}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{MyClass}\PYG{o}{\PYGZlt{}}\PYG{n}{std}\PYG{o}{::}\PYG{n}{string}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{o}{\PYGZgt{}} \PYG{n}{container\PYGZus{}2}\PYG{p}{;}
+\end{Verbatim}

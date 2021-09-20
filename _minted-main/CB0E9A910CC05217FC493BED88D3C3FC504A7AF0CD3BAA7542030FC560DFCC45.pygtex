@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{p}{,} \PYG{k}{typename} \PYG{o}{=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{void\PYGZus{}t}\PYG{o}{\PYGZlt{}\PYGZgt{}\PYGZgt{}}
+\PYG{k}{struct} \PYG{n+nc}{has\PYGZus{}less\PYGZus{}equal} \PYG{o}{:} \PYG{n}{std}\PYG{o}{::}\PYG{n}{false\PYGZus{}type} \PYG{p}{\PYGZob{}\PYGZcb{};}
+
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{p}{,} \PYG{k}{typename} \PYG{o}{=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{void\PYGZus{}t}\PYG{o}{\PYGZlt{}\PYGZgt{}\PYGZgt{}}
+\PYG{k}{struct} \PYG{n+nc}{has\PYGZus{}nothrow\PYGZus{}less\PYGZus{}equal} \PYG{o}{:} \PYG{n}{std}\PYG{o}{::}\PYG{n}{false\PYGZus{}type} \PYG{p}{\PYGZob{}}
+\PYG{p}{\PYGZcb{};}
+
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{o}{\PYGZgt{}}
+\PYG{k}{struct} \PYG{n+nc}{has\PYGZus{}less\PYGZus{}equal}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{p}{,}
+  \PYG{n}{std}\PYG{o}{::}\PYG{n}{void\PYGZus{}t}\PYG{o}{\PYGZlt{}}\PYG{k}{decltype}\PYG{p}{(}\PYG{n}{std}\PYG{o}{::}\PYG{n}{declval}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{()} \PYG{o}{\PYGZlt{}=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{declval}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{())}\PYG{o}{\PYGZgt{}\PYGZgt{}}
+    \PYG{o}{:} \PYG{n}{std}\PYG{o}{::}\PYG{n}{true\PYGZus{}type} \PYG{p}{\PYGZob{}\PYGZcb{};}
+
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{o}{\PYGZgt{}}
+\PYG{k}{struct} \PYG{n+nc}{has\PYGZus{}nothrow\PYGZus{}less\PYGZus{}equal}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{p}{,}
+  \PYG{n}{std}\PYG{o}{::}\PYG{n}{void\PYGZus{}t}\PYG{o}{\PYGZlt{}}\PYG{k}{decltype}\PYG{p}{(}\PYG{n}{std}\PYG{o}{::}\PYG{n}{declval}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{()} \PYG{o}{\PYGZlt{}=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{declval}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{())}\PYG{o}{\PYGZgt{}\PYGZgt{}}
+    \PYG{o}{:} \PYG{n}{std}\PYG{o}{::}\PYG{n}{bool\PYGZus{}constant}\PYG{o}{\PYGZlt{}}\PYG{k}{noexcept}\PYG{p}{(}\PYG{n}{std}\PYG{o}{::}\PYG{n}{declval}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{()} \PYG{o}{\PYGZlt{}=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{declval}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{())}\PYG{o}{\PYGZgt{}} \PYG{p}{\PYGZob{}\PYGZcb{};}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename}\PYG{p}{...} \PYG{n}{Args}\PYG{o}{\PYGZgt{}}
+\PYG{k}{auto} \PYG{n}{multiply}\PYG{p}{(}\PYG{n}{Args}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{p}{...} \PYG{n}{args}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{(...} \PYG{o}{*} \PYG{n}{args}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

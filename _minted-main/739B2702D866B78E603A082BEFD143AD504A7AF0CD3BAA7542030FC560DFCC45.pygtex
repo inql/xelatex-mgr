@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{bool} \PYG{n}{equals}\PYG{p}{(}\PYG{k}{const} \PYG{n}{Matrix}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}\PYGZam{}} \PYG{n}{rhs}\PYG{p}{,} \PYG{n}{std}\PYG{o}{::}\PYG{n}{false\PYGZus{}type} \PYG{c+cm}{/*is\PYGZus{}floating\PYGZus{}point*/}\PYG{p}{)} \PYG{k}{const}
+\end{Verbatim}

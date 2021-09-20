@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{o}{\PYGZgt{}} \PYG{k+kt}{void} \PYG{n}{BM\PYGZus{}MatrixGenAdd}\PYG{p}{(}\PYG{n}{benchmark}\PYG{o}{::}\PYG{n}{State} \PYG{o}{\PYGZam{}}\PYG{n}{state}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k}{auto} \PYG{n}{rows} \PYG{o}{=} \PYG{n}{state}\PYG{p}{.}\PYG{n}{range}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}
+  \PYG{k}{auto} \PYG{n}{cols} \PYG{o}{=} \PYG{n}{state}\PYG{p}{.}\PYG{n}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{);}
+  \PYG{k}{for} \PYG{p}{(}\PYG{k}{auto} \PYG{n+nl}{\PYGZus{}} \PYG{p}{:} \PYG{n}{state}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{state}\PYG{p}{.}\PYG{n}{PauseTiming}\PYG{p}{();}
+    \PYG{n}{Matrix}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}} \PYG{o}{*}\PYG{n}{matrix1} \PYG{o}{=}
+        \PYG{n}{getMap}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{()[}\PYG{n}{std}\PYG{o}{::}\PYG{n}{pair}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,} \PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{((}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{rows}\PYG{p}{,} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{cols}\PYG{p}{)];}
+    \PYG{n}{Matrix}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}} \PYG{o}{*}\PYG{n}{matrix2} \PYG{o}{=}
+        \PYG{n}{getMap}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{()[}\PYG{n}{std}\PYG{o}{::}\PYG{n}{pair}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,} \PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{((}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{rows}\PYG{p}{,} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{cols}\PYG{p}{)];}
+    \PYG{n}{state}\PYG{p}{.}\PYG{n}{ResumeTiming}\PYG{p}{();}
+    \PYG{k}{auto} \PYG{n}{matrix3} \PYG{o}{=} \PYG{o}{*}\PYG{n}{matrix1} \PYG{o}{+} \PYG{o}{*}\PYG{n}{matrix2}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{n}{state}\PYG{p}{.}\PYG{n}{SetComplexityN}\PYG{p}{(}\PYG{n}{state}\PYG{p}{.}\PYG{n}{range}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{o}{*} \PYG{n}{state}\PYG{p}{.}\PYG{n}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{));}
+
+  \PYG{n}{BENCHMARK\PYGZus{}TEMPLATE}\PYG{p}{(}\PYG{n}{BM\PYGZus{}MatrixGenAdd}\PYG{p}{,} \PYG{k+kt}{char}\PYG{p}{)}                     \PYGZbs{}
+      \PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{Apply}\PYG{p}{(\PYGZob{}}\PYG{l+m+mi}{100}\PYG{p}{,}\PYG{l+m+mi}{100}\PYG{p}{\PYGZcb{})}                                        \PYGZbs{}
+      \PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{Complexity}\PYG{p}{(}\PYG{n}{benchmark}\PYG{o}{::}\PYG{n}{complex}\PYG{p}{)}                          \PYGZbs{}
+      \PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{Iterations}\PYG{p}{(}\PYG{l+m+mi}{10000}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

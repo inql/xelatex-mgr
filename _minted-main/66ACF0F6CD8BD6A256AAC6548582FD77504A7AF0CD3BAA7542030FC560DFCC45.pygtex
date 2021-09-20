@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Polynomial}\PYG{p}{(}\PYG{k}{const} \PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{num}\PYG{p}{)}
+\end{Verbatim}

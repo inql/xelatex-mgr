@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Number}\PYG{o}{\PYGZlt{}}\PYG{n}{BASE}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{k}{const} \PYG{n}{Number}\PYG{o}{\PYGZlt{}}\PYG{n}{BASE}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZam{}}\PYG{n}{num1}\PYG{p}{)}
+\end{Verbatim}

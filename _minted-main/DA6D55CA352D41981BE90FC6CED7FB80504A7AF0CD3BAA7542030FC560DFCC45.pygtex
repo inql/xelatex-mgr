@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Polynomial} \PYG{o}{\PYGZam{}}\PYG{n}{Polynomial}\PYG{o}{::}\PYG{k}{operator}\PYG{o}{*=}\PYG{p}{(}\PYG{k}{const} \PYG{n}{Polynomial} \PYG{o}{\PYGZam{}}\PYG{n}{other}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{n}{std}\PYG{o}{::}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{temp}\PYG{p}{(}\PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{()} \PYG{o}{+} \PYG{n}{other}\PYG{p}{.}\PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(),} \PYG{k+kt}{int}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{));}
+  \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{!=} \PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{j} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{j} \PYG{o}{!=} \PYG{n}{other}\PYG{p}{.}\PYG{n}{data}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{o}{++}\PYG{n}{j}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n}{temp}\PYG{p}{[}\PYG{n}{i} \PYG{o}{+} \PYG{n}{j}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{data}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{*} \PYG{n}{other}\PYG{p}{.}\PYG{n}{data}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{n}{normalize}\PYG{p}{(}\PYG{n}{temp}\PYG{p}{);}
+  \PYG{o}{*}\PYG{k}{this} \PYG{o}{=} \PYG{n}{Polynomial}\PYG{p}{(}\PYG{n}{temp}\PYG{p}{);}
+  \PYG{k}{return} \PYG{o}{*}\PYG{k}{this}\PYG{p}{;}
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{bool} \PYG{n}{isPositive} \PYG{o}{=} \PYG{n}{x}\PYG{p}{.}\PYG{n}{getIsPositive}\PYG{p}{()} \PYG{o}{==} \PYG{n}{y}\PYG{p}{.}\PYG{n}{getIsPositive}\PYG{p}{();}
+\PYG{k}{auto} \PYG{n}{result} \PYG{o}{=} \PYG{n}{karatsubaInner}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{);}
+\PYG{n}{result}\PYG{p}{.}\PYG{n}{setIsPositive}\PYG{p}{(}\PYG{n}{isPositive}\PYG{p}{);}
+\PYG{k}{return} \PYG{n}{result}\PYG{p}{;}
+\end{Verbatim}

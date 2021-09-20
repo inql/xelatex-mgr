@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Polynomial} \PYG{k}{operator}\PYG{o}{+}\PYG{p}{(}\PYG{n}{Polynomial} \PYG{n}{first}\PYG{p}{,} \PYG{k}{const} \PYG{n}{Polynomial} \PYG{o}{\PYGZam{}}\PYG{n}{second}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+   \PYG{k}{return} \PYG{n}{first} \PYG{o}{+=} \PYG{n}{second}\PYG{p}{;} \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

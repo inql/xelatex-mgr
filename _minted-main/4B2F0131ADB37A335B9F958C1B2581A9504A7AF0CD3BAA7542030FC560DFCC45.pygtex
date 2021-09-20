@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{make\PYGZus{}tuple}\PYG{p}{(}\PYG{n}{arg1}\PYG{p}{,} \PYG{n}{arg2}\PYG{p}{,} \PYG{n}{arg3}\PYG{p}{)}
+\end{Verbatim}

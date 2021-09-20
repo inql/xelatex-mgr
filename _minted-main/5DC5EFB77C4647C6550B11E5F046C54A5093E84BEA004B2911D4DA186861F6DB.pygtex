@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} W głównym folderze projektu:}
+cmake \PYGZhy{}Htest\PYGZus{}benchmark \PYGZhy{}Bbuild/test\PYGZus{}benchmark \PYGZhy{}DCMAKE\PYGZus{}BUILD\PYGZus{}TYPE\PYG{o}{=}Release
+cmake \PYGZhy{}\PYGZhy{}build build/test\PYGZus{}benchmark
+cmake \PYGZhy{}\PYGZhy{}build build/test\PYGZus{}benchmark \PYGZhy{}\PYGZhy{}target benchmark\PYGZus{}main
+./build/test\PYGZus{}benchmark/GenAlgTests
+\end{Verbatim}

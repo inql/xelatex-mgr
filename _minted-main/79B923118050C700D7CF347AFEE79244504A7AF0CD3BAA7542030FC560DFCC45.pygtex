@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Number}\PYG{o}{\PYGZlt{}}\PYG{n}{BASE}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{std}\PYG{o}{::}\PYG{n}{deque}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{bool} \PYG{n}{positive} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{)}
+\end{Verbatim}

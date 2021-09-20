@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k+kt}{int} \PYG{n}{I}\PYG{o}{\PYGZgt{}} \PYG{k}{struct} \PYG{n+nc}{Int2Type} \PYG{p}{\PYGZob{}}
+  \PYG{k}{enum} \PYG{p}{\PYGZob{}} \PYG{n}{value} \PYG{o}{=} \PYG{n}{I} \PYG{p}{\PYGZcb{};}
+\PYG{p}{\PYGZcb{};}
+
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{T}\PYG{p}{,} \PYG{n}{T} \PYG{n}{Value}\PYG{o}{\PYGZgt{}}
+\PYG{k}{struct} \PYG{n+nc}{value\PYGZus{}as\PYGZus{}type} \PYG{p}{\PYGZob{}}
+    \PYG{k}{static} \PYG{k}{constexpr} \PYG{k}{const} \PYG{n}{T} \PYG{n}{value}\PYG{p}{\PYGZob{}}\PYG{n}{Value}\PYG{p}{\PYGZcb{};}
+\PYG{p}{\PYGZcb{};}
+\end{Verbatim}

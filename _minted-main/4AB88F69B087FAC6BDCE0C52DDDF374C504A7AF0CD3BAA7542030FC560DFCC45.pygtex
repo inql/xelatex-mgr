@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{auto} \PYG{n+nf}{multiply}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k}{template} \PYG{o}{\PYGZlt{}}\PYG{k}{typename} \PYG{n+nc}{Head}\PYG{p}{,} \PYG{k}{typename}\PYG{p}{...} \PYG{n}{Tail}\PYG{o}{\PYGZgt{}}
+\PYG{k}{auto} \PYG{n}{multiply}\PYG{p}{(}\PYG{n}{Head} \PYG{n}{head}\PYG{p}{,} \PYG{n}{Tail}\PYG{p}{...} \PYG{n}{tail}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{head} \PYG{o}{+} \PYG{n}{multiply}\PYG{p}{(}\PYG{n}{tail}\PYG{p}{...);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
