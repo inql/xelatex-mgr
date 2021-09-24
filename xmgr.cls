@@ -160,7 +160,31 @@ i~materialnych innych osób.\endgraf }
 \hbox to45mm{\hss podpis\hss}}%
 }}\par
 \newpage }
-
+%
+\def\oswiadczeniesecondText{%
+Wyrażam zgodę / nie wyrażam zgody* na udostępnienie osobom
+zainteresowanym mojej pracy dyplomowej dla celów naukowo-badawczych.\\
+Zgoda na udostępnienie pracy dyplomowej nie oznacza wyrażenia zgody
+na kopiowanie pracy dyplomowej w całości lub w części.\\
+\textit{*niepotrzebne skreślić}\endgraf }
+%
+\long\def\oswiadczeniesecond{%%\newpage 
+\if@twocolumn \onecolumn \fi
+\chapter*{Oświadczenie}%
+\addcontentsline{toc}{chapter}{Oświadczenie}%
+\par 
+\vskip6mm
+\noindent
+\oswiadczeniesecondText
+\par\vskip12mm 
+\centerline{\vbox{%
+\hbox to.8\textwidth{\hbox to45mm{\dotfill}\hss 
+   \hbox to45mm{\dotfill}} 
+\hbox to.8\textwidth{\hbox to45mm{\hss data\hss}\hss
+\hbox to45mm{\hss podpis\hss}}%
+}}\par
+\newpage }
+%
 \renewcommand\maketitle{%
   \begin{titlepage}%
     \let\footnotesize\small
