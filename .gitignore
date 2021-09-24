@@ -8,7 +8,11 @@
 *.toc
 *.bbl
 *.blg
+*.listing
+*.loa
+*.lol
 \#*
 .\#*
 *~
 *.synctex.gz
+_*/
