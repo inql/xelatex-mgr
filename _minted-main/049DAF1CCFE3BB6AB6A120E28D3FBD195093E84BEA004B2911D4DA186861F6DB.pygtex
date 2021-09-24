@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{\PYGZsh{} W głównym folderze projektu:}
-cmake \PYGZhy{}Htest \PYGZhy{}Bbuild/test
-cmake \PYGZhy{}\PYGZhy{}build build/test
-\PYG{n+nv}{CTEST\PYGZus{}OUTPUT\PYGZus{}ON\PYGZus{}FAILURE}\PYG{o}{=}\PYG{l+m}{1} cmake \PYGZhy{}\PYGZhy{}build build/test \PYGZhy{}\PYGZhy{}target \PYG{n+nb}{test}
-\end{Verbatim}

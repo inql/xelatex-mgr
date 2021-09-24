@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-    error: invalid conversion from \PYG{l+s+s1}{\PYGZsq{}const char*\PYGZsq{}} to \PYG{l+s+s1}{\PYGZsq{}int\PYGZsq{}} \PYG{o}{[}\PYGZhy{}fpermissive\PYG{o}{]}
-   \PYG{l+m}{14} \PYG{p}{|}     is\PYGZus{}lower\PYGZlt{}int\PYGZgt{}\PYG{o}{(}\PYG{l+m}{1}, \PYG{l+s+s2}{\PYGZdq{}test\PYGZdq{}}\PYG{o}{)}\PYG{p}{;} // ERROR!
-      \PYG{p}{|}                      \PYGZca{}\PYGZti{}\PYGZti{}\PYGZti{}\PYGZti{}\PYGZti{}
-      \PYG{p}{|}                      \PYG{p}{|}
-      \PYG{p}{|}                      const char*
-\end{Verbatim}

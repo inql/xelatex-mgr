@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}benchmark/benchmark.h\PYGZgt{}}
-\PYG{n}{BENCHMARK\PYGZus{}MAIN}\PYG{p}{();}
-\end{Verbatim}

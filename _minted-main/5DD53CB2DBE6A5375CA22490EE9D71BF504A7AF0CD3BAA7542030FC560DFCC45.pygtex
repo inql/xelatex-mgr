@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{node} \PYG{o}{*}\PYG{n}{deleteNode}\PYG{p}{(}\PYG{n}{node} \PYG{o}{*}\PYG{n}{leaf}\PYG{p}{)}
-\end{Verbatim}
